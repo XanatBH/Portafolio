@@ -1,6 +1,6 @@
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   color: #272829;
 }
 
@@ -15,7 +15,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .back-to-top {
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #2eafec;
+  background: #ec472e;
   color: #fff;
 }
 .back-to-top.active {
@@ -56,14 +56,15 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   overflow-y: auto;
 }
 #header .profile img {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid #2c2f3f;
+  border: 8px solid #e36f31;
 }
 #header .profile h1 {
   font-size: 24px;
@@ -81,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
+  background: #ca7724;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -100,6 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #main {
   margin-left: 300px;
+
 }
 
 @media (max-width: 1199px) {
@@ -136,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a i, .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: #ffffff;
 }
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
   text-decoration: none;
@@ -210,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 #hero p span {
   color: #fff;
@@ -305,8 +307,10 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+
 }
 .portfolio #portfolio-flters {
   padding: 0;
@@ -370,7 +374,8 @@ section {
   text-align: center;
   background: rgba(221, 110, 20, 0.75);
   transition: 0.3s;
-  width: 50%;
+  width: 70px;
+  border-radius: 50%;
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: rgba(221, 110, 20, 0.95);
@@ -390,59 +395,6 @@ section {
   bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #e36f31;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #e36f31;
-}
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
-}
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
 
 /*--------------------------------------------------------------
 # Contact
@@ -450,58 +402,26 @@ section {
 .contact {
   padding-bottom: 130px;
 }
-.contact .info {
-  padding: 30px;
-  background: #fff;
-  width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
+
 .contact .info i {
   font-size: 20px;
-  color: #e36f31;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #dff3fc;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e36f31;
+  color: #dff3fc;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
   transition: all 0.3s ease-in-out;
 }
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #050d18;
-}
 .contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
+  
   font-size: 14px;
-  color: #173b6c;
+  color: #000000;
 }
-.contact .info .email p {
-  padding-top: 5px;
-}
-.contact .info .social-links {
-  padding-left: 60px;
-}
-.contact .info .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  margin-right: 10px;
-}
+
+
 .contact .info .social-links a:hover {
   background: #e36f31;
   color: #fff;
@@ -511,81 +431,7 @@ section {
   color: #fff;
 }
 
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-.contact .php-email-form .form-group {
-  margin-bottom: 15px;
-}
-.contact .php-email-form label {
-  padding-bottom: 8px;
-}
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-.contact .php-email-form input {
-  height: 44px;
-}
-.contact .php-email-form textarea {
-  padding: 10px 15px;
-}
-.contact .php-email-form button[type=submit] {
-  background: #149ddd;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-.contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
-}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -640,36 +486,5 @@ section {
   }
   .breadcrumbs ol li {
     display: inline-block;
-  }
-}
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  padding: 15px;
-  color: #f4f6fd;
-  font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  z-index: 9999;
-  background: #040b14;
-}
-#footer .copyright {
-  text-align: center;
-}
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #eaebf0;
-}
-@media (max-width: 1199px) {
-  #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
   }
 }

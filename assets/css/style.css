@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;800;900&display=swap');
 
 body {
   font-family: 'Fira Sans', sans-serif;
@@ -26,13 +27,13 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 15px;
   z-index: 996;
   background: #e36f31;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50px;
   transition: all 0.4s;
 }
 .back-to-top i {
-  font-size: 28px;
+  font-size: 35px;
   color: #fff;
   line-height: 0;
 }
@@ -80,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 #header .profile .social-links a {
-  font-size: 18px;
+  font-size: 25px;
   display: inline-block;
   background: #ca7724;
   color: #fff;
@@ -89,8 +90,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   transition: 0.3s;
 }
 #header .profile .social-links a:hover {
@@ -136,8 +137,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 .nav-menu a i, .nav-menu a:focus i {
-  font-size: 24px;
-  padding-right: 8px;
+  font-size: 25px;
+  padding-right: 15px;
   color: #ffffff;
 }
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
@@ -147,6 +148,22 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
   color: #e36f31;
 }
+
+.nav-menu .email {
+  margin-top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email a {
+  font-size: 15px;
+}
+
+.email .solid {
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
 
 
 .mobile-nav-toggle {
@@ -393,42 +410,6 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
-}
-
-
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-.contact {
-  padding-bottom: 130px;
-}
-
-.contact .info i {
-  font-size: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #e36f31;
-  color: #dff3fc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-}
-.contact .info p {
-  
-  font-size: 14px;
-  color: #000000;
-}
-
-
-.contact .info .social-links a:hover {
-  background: #e36f31;
-  color: #fff;
-}
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #e36f31;
-  color: #fff;
 }
 
 
